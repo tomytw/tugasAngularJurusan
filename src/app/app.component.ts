@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'my-app',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular';
+  name = 'Tomy';
+
+  constructor(private router : Router) {}
+
+  goInput(){
+    this.router.navigate('/input');
+  }
+
+
 }
