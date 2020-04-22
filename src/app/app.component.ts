@@ -11,9 +11,10 @@ export class AppComponent  {
 
   constructor(private router : Router) {}
 
-  goInput(){
-    this.router.navigate('/input');
-  }
+  namaJurusan = [];
+  penjelasan = [];
+
+  
 
 
 }
