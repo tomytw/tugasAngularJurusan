@@ -15,7 +15,13 @@ export class InputComponent implements OnInit {
   }
 
   tambahkan(){
+   this._appComponent.addNamaJurusan(this.jurusan);
+   this._appComponent.addPenjelasan(this.penjelasan);
 
+   alert(this.jurusan +" berhasil ditambahkan")
+
+   console.log(this._appComponent.namaJurusan);
+   console.log(this._appComponent.penjelasan);
   }
 
 }

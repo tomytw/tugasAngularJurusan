@@ -14,7 +14,13 @@ export class AppComponent  {
   namaJurusan = [];
   penjelasan = [];
 
-  
+  addNamaJurusan(namaJur){
+    this.namaJurusan.push(namaJur);
+  }
+
+  addPenjelasan(pen){
+    this.penjelasan.push(pen);
+  }
 
 
 }
