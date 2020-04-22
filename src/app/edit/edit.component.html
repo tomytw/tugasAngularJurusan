@@ -1,0 +1,14 @@
+<h2>Edit Penjelasan Jurusan</h2>
+
+Nama Jurusan : <input type="text" [(ngModel)] = "namaJurusan">
+<br><br>
+Edit Penjelasan : <input type="text" [(ngModel)] = "penjelasan">
+<br><br>
+
+<button (click)=_appComponent.edit(namaJurusan,penjelasan)>Edit</button>
+
+<!-- <div *ngFor="let str of hasil;let i = index">
+  {{i+1}}. {{str}}
+  Edit penjelasan : <input type="text" name="editText{{i}}" #name="ngModel" ngModel>
+  <button (click)=_appComponent.edit(i,editText)>Edit</button>
+</div> -->
